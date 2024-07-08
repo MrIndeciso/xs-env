@@ -17,8 +17,8 @@ git checkout v5.020
 
 autoconf        # Create ./configure script
 # Configure and create Makefile
-./configure CC=clang CXX=clang++ LINK=clang++ # We use clang as default compiler
-make -j8        # Build Verilator itself
-sudo make install
+./configure CC=clang CXX=clang++ LINK=clang++ --prefix=$HOME/.local # We use clang as default compiler
+make -j16        # Build Verilator itself
+make install
 
 verilator --version
