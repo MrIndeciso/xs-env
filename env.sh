@@ -1,5 +1,6 @@
 # This script will setup XiangShan environment variables
 
+export PATH="$PATH:$HOME/.local/bin"
 export XS_PROJECT_ROOT=$(pwd)
 export NEMU_HOME=$(pwd)/NEMU
 export AM_HOME=$(pwd)/nexus-am
